@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1052</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="mesaggio1">
+    <property name="geometry">
+     <rect>
+      <x>311</x>
+      <y>330</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>1041</width>
+      <height>341</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>93</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="messaggioButton1">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>20</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Symbol</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1052</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menufile">
+    <property name="title">
+     <string>file</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionApri"/>
+    <addaction name="actionSalva"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuFormato">
+    <property name="title">
+     <string>Formato</string>
+    </property>
+    <addaction name="actionGrassetto"/>
+   </widget>
+   <addaction name="menufile"/>
+   <addaction name="menuFormato"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionGrassetto"/>
+  </widget>
+  <action name="actionApri">
+   <property name="text">
+    <string>Apri</string>
+   </property>
+  </action>
+  <action name="actionSalva">
+   <property name="text">
+    <string>Salva</string>
+   </property>
+  </action>
+  <action name="actionGrassetto">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/icon/img/bold.png</normaloff>:/icon/img/bold.png</iconset>
+   </property>
+   <property name="text">
+    <string>Grassetto</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="risorse.qrc"/>
+ </resources>
+ <connections/>
+</ui>
